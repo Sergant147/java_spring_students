@@ -12,12 +12,12 @@ import java.time.Period;
 public class Student {
     @Id
     @GeneratedValue
-    private Long id;
-    private String firstName;
-    private String lastName;
-    private LocalDate dateOfBirth;
+    private Optional<Long> id;
+    private Optional<String> firstName;
+    private Optional<String> lastName;
+    private Optional<LocalDate> dateOfBirth;
     @Column(unique = true)
-    private String email;
+    private Optional<String> email;
     @Transient
     private int age;
 
