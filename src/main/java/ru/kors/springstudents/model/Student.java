@@ -1,4 +1,4 @@
-package ru.kors.springstudents.models;
+package ru.kors.springstudents.model;
 
 import jakarta.persistence.*;
 import lombok.*;

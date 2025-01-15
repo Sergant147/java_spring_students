@@ -1,9 +1,9 @@
-package ru.kors.springstudents.controllers;
+package ru.kors.springstudents.controller;
 
 import lombok.AllArgsConstructor;
 import org.springframework.web.bind.annotation.*;
-import ru.kors.springstudents.models.Student;
-import ru.kors.springstudents.services.StudentService;
+import ru.kors.springstudents.model.Student;
+import ru.kors.springstudents.service.StudentService;
 
 import java.util.List;
 

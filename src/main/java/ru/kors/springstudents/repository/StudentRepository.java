@@ -1,7 +1,7 @@
-package ru.kors.springstudents.repositorys;
+package ru.kors.springstudents.repository;
 
 import org.springframework.data.jpa.repository.JpaRepository;
-import ru.kors.springstudents.models.Student;
+import ru.kors.springstudents.model.Student;
 
 
 public interface StudentRepository extends JpaRepository<Student, Long> {
