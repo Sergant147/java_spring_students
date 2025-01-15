@@ -37,7 +37,6 @@ public class StudentServiceImpl implements StudentService {
     }
 
     @Override
-    @Transactional
     public void deleteStudent(String email) {
         repository.deleteByEmail(email);
     }
