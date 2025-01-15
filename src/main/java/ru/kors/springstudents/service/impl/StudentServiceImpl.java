@@ -1,4 +1,4 @@
-package ru.kors.springstudents.service.Impl;
+package ru.kors.springstudents.service.impl;
 
 import lombok.AllArgsConstructor;
 import org.springframework.context.annotation.Primary;
