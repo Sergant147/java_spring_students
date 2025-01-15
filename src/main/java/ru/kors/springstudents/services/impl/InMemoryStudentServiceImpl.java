@@ -1,10 +1,10 @@
-package ru.kors.springstudents.service.impl;
+package ru.kors.springstudents.services.impl;
 
 import lombok.AllArgsConstructor;
 import org.springframework.stereotype.Service;
-import ru.kors.springstudents.model.Student;
-import ru.kors.springstudents.repository.InMemoryStudentDAO;
-import ru.kors.springstudents.service.StudentService;
+import ru.kors.springstudents.models.Student;
+import ru.kors.springstudents.repositorys.InMemoryStudentDAO;
+import ru.kors.springstudents.services.StudentService;
 
 import java.util.List;
 
@@ -17,6 +17,7 @@ public class InMemoryStudentServiceImpl implements StudentService {
     public List<Student> findAllStudent() {
         return repository.findAllStudent();
     }
+
     @Override
     public Student saveStudent(Student student) {
         return repository.saveStudent(student);

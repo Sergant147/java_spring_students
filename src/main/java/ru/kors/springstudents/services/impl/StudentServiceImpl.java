@@ -1,12 +1,12 @@
-package ru.kors.springstudents.service.impl;
+package ru.kors.springstudents.services.impl;
 
 import lombok.AllArgsConstructor;
 import org.springframework.context.annotation.Primary;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
-import ru.kors.springstudents.model.Student;
-import ru.kors.springstudents.repository.StudentRepository;
-import ru.kors.springstudents.service.StudentService;
+import ru.kors.springstudents.models.Student;
+import ru.kors.springstudents.repositorys.StudentRepository;
+import ru.kors.springstudents.services.StudentService;
 
 import java.util.List;
 

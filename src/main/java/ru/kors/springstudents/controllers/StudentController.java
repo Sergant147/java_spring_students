@@ -1,18 +1,15 @@
-package ru.kors.springstudents.controller;
+package ru.kors.springstudents.controllers;
 
 import lombok.AllArgsConstructor;
-import lombok.NonNull;
-import lombok.RequiredArgsConstructor;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
-import ru.kors.springstudents.model.Student;
-import ru.kors.springstudents.service.StudentService;
+import ru.kors.springstudents.models.Student;
+import ru.kors.springstudents.services.StudentService;
 
 import java.util.List;
 
 
 @RestController
-@RequestMapping("/api/v1/students")
+@RequestMapping("/api/students")
 @AllArgsConstructor
 public class StudentController {
     private final StudentService service;

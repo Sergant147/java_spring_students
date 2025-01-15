@@ -1,7 +1,7 @@
-package ru.kors.springstudents.repository;
+package ru.kors.springstudents.repositorys;
 
 import org.springframework.stereotype.Repository;
-import ru.kors.springstudents.model.Student;
+import ru.kors.springstudents.models.Student;
 
 import java.util.ArrayList;
 import java.util.List;
