@@ -14,10 +14,12 @@ import java.util.List;
 @AllArgsConstructor
 public class StudentController {
     private StudentService service;
-    public  StudentController() {
+
+    public StudentController() {
         service = new StudentServiceImpl();
 
     }
+
     @GetMapping
     public List<Student> findAllStudent() {
         return service.findAllStudent();
