@@ -12,24 +12,33 @@ import java.time.Period;
 public class Student {
     @Id
     @GeneratedValue
+    @Column
     private Optional<Long> id;
+
+
+    @Column
     private Optional<String> firstName;
+
+
+    @Column
     private Optional<String> lastName;
+
+
+    @Column
     private Optional<LocalDate> dateOfBirth;
+
+
     @Column(unique = true)
     private Optional<String> email;
+
+    @Column
     private int age;
 
-    public Student(String firstName, String secondName, LocalDate dateOfBirth_, String email_) {
-        this.firstName = firstName_;
-        this.secondName = secondName_;
-        this.dateOfBirth = dateOfBirth_;
-        this.email = email_;
+    public Student(String firstName, String secondName, LocalDate dateOfBirth, String email) {
+        this.firstName = firstName;
+        this.lastName = secondName;
+        this.dateOfBirth = dateOfBirth;
+        this.email = email;
         this.age = Period.between(dateOfBirth, LocalDate.now()).getYears();
-        ;
-    }
-
-    public int getAge() {
-        return Period.between(dateOfBirth, LocalDate.now()).getYears();
     }
 }
