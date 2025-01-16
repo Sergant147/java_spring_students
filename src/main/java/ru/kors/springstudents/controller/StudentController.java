@@ -19,7 +19,7 @@ public class StudentController {
         return service.findAllStudent();
     }
 
-    @PostMapping
+    @PostMapping("save_student")
     public String saveStudent(@RequestBody Student student) {
         service.saveStudent(student);
         return "Student successfully saved";
@@ -29,13 +29,14 @@ public class StudentController {
     public Student findByEmail(@PathVariable String email) {
         return service.findByEmail(email);
     }
+    // /api/v1/students/oleg12@gmail.com
 
-    @PutMapping("/{email}")
+    @PutMapping("update_student")
     public Student updateStudent(@RequestBody Student student) {
         return service.updateStudent(student);
     }
 
-    @DeleteMapping("/{email}")
+    @DeleteMapping("delete_student/{email}")
     public void deleteStudent(@PathVariable String email) {
         service.deleteStudent(email);
     }
