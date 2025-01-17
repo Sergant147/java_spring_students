@@ -5,7 +5,6 @@ import lombok.Data;
 
 import java.time.LocalDate;
 import java.time.Period;
-import java.util.Optional;
 
 @Data
 @Entity
@@ -14,7 +13,7 @@ public class Student {
     @Id
     @GeneratedValue
     @Column(unique = true)
-    private Optional<Long> id;
+    private Long id;
 
     @Column
     private String firstName;
