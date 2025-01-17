@@ -26,7 +26,7 @@ public class StudentServiceImpl implements StudentService {
     }
 
     @Override
-    public Student findByEmail(int id) {
+    public Student findStudentById(int id) {
         return repository.findStudentById(id);
     }
 
