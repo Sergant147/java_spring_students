@@ -20,8 +20,8 @@ public class StudentController {
     }
 
     @PostMapping
-    public Student saveStudent(@RequestBody Student student) {
-        return service.saveStudent(student);
+    public Student createStudent(@RequestBody Student student) {
+        return service.createStudent(student);
     }
 
     @GetMapping("/{id}")
