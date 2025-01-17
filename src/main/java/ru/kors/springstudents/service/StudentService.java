@@ -11,7 +11,11 @@ public interface StudentService {
 
     Student findByEmail(String email);
 
+    Student findByEmail(int id);
+
     Student updateStudent(Student student);
 
     void deleteStudent(String email);
+
+    void deleteStudent(int id);
 }

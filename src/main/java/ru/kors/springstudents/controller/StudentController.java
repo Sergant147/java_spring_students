@@ -12,7 +12,7 @@ import java.util.List;
 @RequestMapping("/api/students")
 @AllArgsConstructor
 public class StudentController {
-    private final StudentService service;
+    private StudentService service;
 
     @GetMapping
     public List<Student> findAllStudent() {
