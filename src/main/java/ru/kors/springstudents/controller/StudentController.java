@@ -20,9 +20,9 @@ public class StudentController {
     }
 
     @PostMapping
-    public String saveStudent(@RequestBody Student student) {
+    public Student saveStudent(@RequestBody Student student) {
         service.saveStudent(student);
-        return "Student successfully saved";
+        return student;
     }
 
     @GetMapping("/{id}")
