@@ -19,25 +19,25 @@ public class StudentController {
         return service.findAllStudent();
     }
 
-    @PostMapping("save_student")
+    @PostMapping
     public String saveStudent(@RequestBody Student student) {
         service.saveStudent(student);
         return "Student successfully saved";
     }
 
-    @GetMapping("/{email}")
-    public Student findByEmail(@PathVariable String email) {
-        return service.findByEmail(email);
+    @GetMapping("/{id}")
+    public Student findByEmail(@PathVariable int id) {
+        return service.findByEmail(id);
     }
     // /api/v1/students/oleg12@gmail.com
 
-    @PutMapping("update_student")
+    @PutMapping
     public Student updateStudent(@RequestBody Student student) {
         return service.updateStudent(student);
     }
 
-    @DeleteMapping("delete_student/{email}")
-    public void deleteStudent(@PathVariable String email) {
-        service.deleteStudent(email);
+    @DeleteMapping("/{id}")
+    public void deleteStudent(@PathVariable int id) {
+        service.deleteStudent(id);
     }
 }

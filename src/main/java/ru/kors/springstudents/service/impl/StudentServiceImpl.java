@@ -26,7 +26,7 @@ public class StudentServiceImpl implements StudentService {
     }
 
     @Override
-    public Student findByEmail(String email) {
+    public Student findByEmail(int id) {
         return repository.findStudentByEmail(email);
     }
 
@@ -36,7 +36,7 @@ public class StudentServiceImpl implements StudentService {
     }
 
     @Override
-    public void deleteStudent(String email) {
+    public void deleteStudent(int id) {
         repository.deleteByEmail(email);
     }
 }
