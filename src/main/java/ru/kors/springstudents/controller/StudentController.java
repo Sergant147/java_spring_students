@@ -27,8 +27,8 @@ public class StudentController {
     }
 
     @GetMapping("/{id}")
-    public Student findByEmail(@PathVariable int id) {
-        return service.findByEmail(id);
+    public Student findById(@PathVariable int id) {
+        return service.findStudentById(id);
     }
 
     @PutMapping

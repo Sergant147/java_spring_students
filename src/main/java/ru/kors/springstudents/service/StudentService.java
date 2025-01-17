@@ -9,7 +9,7 @@ public interface StudentService {
 
     Student saveStudent(Student student);
 
-    Student findById(int id);
+    Student findStudentById(int id);
 
     Student updateStudent(Student student);
 
