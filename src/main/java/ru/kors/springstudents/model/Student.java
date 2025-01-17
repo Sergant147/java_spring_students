@@ -15,18 +15,14 @@ public class Student {
     @Column
     private Optional<Long> id;
 
-
     @Column
     private Optional<String> firstName;
-
 
     @Column
     private Optional<String> lastName;
 
-
     @Column
     private Optional<LocalDate> dateOfBirth;
-
 
     @Column(unique = true)
     private Optional<String> email;
