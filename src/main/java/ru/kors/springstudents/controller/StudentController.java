@@ -5,7 +5,6 @@ import org.springframework.web.bind.annotation.*;
 import ru.kors.springstudents.model.Student;
 import ru.kors.springstudents.service.StudentService;
 
-
 import java.util.List;
 
 
@@ -22,8 +21,7 @@ public class StudentController {
 
     @PostMapping
     public Student saveStudent(@RequestBody Student student) {
-        service.saveStudent(student);
-        return student;
+        return service.saveStudent(student);
     }
 
     @GetMapping("/{id}")
