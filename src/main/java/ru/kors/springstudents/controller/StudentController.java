@@ -29,7 +29,6 @@ public class StudentController {
     public Student findByEmail(@PathVariable int id) {
         return service.findByEmail(id);
     }
-    // /api/v1/students/oleg12@gmail.com
 
     @PutMapping
     public Student updateStudent(@RequestBody Student student) {
