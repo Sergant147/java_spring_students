@@ -3,7 +3,6 @@ package ru.kors.springstudents.service.impl;
 import lombok.AllArgsConstructor;
 import org.springframework.context.annotation.Primary;
 import org.springframework.stereotype.Service;
-import org.springframework.transaction.annotation.Transactional;
 import ru.kors.springstudents.model.Student;
 import ru.kors.springstudents.repository.StudentRepository;
 import ru.kors.springstudents.service.StudentService;
