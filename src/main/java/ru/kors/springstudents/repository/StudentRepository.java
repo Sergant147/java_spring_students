@@ -9,7 +9,7 @@ import java.util.List;
 public interface StudentRepository extends JpaRepository<Student, Long> {
     void deleteByEmail(int id);
 
-    Student findStudentByEmail(int id);
+    Student findStudentById(int id);
 
     Student save(Student student);
 

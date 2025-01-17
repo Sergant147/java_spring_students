@@ -9,13 +9,9 @@ public interface StudentService {
 
     Student saveStudent(Student student);
 
-    Student findByEmail(String email);
-
-    Student findByEmail(int id);
+    Student findById(int id);
 
     Student updateStudent(Student student);
-
-    void deleteStudent(String email);
 
     void deleteStudent(int id);
 }

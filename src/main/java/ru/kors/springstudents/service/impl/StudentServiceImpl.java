@@ -26,13 +26,8 @@ public class StudentServiceImpl implements StudentService {
     }
 
     @Override
-    public Student findByEmail(String email) {
-        return null;
-    }
-
-    @Override
     public Student findByEmail(int id) {
-        return repository.findStudentByEmail(id);
+        return repository.findStudentById(id);
     }
 
     @Override
@@ -40,7 +35,6 @@ public class StudentServiceImpl implements StudentService {
         return repository.save(student);
     }
 
-    }
 
     @Override
     public void deleteStudent(int id) {
