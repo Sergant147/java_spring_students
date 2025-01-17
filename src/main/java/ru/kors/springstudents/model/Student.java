@@ -16,15 +16,15 @@ public class Student {
     private Optional<Long> id;
 
     @Column
-    private Optional<String> firstName;
+    private String firstName;
 
     @Column
-    private Optional<String> lastName;
+    private String lastName;
 
     @Column
-    private Optional<LocalDate> dateOfBirth;
+    private LocalDate dateOfBirth;
 
-    private Optional<String> email;
+    private String email;
 
     @Column
     private int age;
