@@ -12,7 +12,7 @@ import java.time.Period;
 public class Student {
     @Id
     @GeneratedValue
-    @Column
+    @Column(unique = true)
     private Optional<Long> id;
 
     @Column
@@ -24,7 +24,6 @@ public class Student {
     @Column
     private Optional<LocalDate> dateOfBirth;
 
-    @Column(unique = true)
     private Optional<String> email;
 
     @Column
