@@ -9,9 +9,9 @@ public interface StudentService {
 
     Student createStudent(Student student);
 
-    Student findStudentById(int id);
+    Student findStudentById(long id);
 
     Student updateStudent(Student student);
 
-    void deleteStudent(int id);
+    void deleteStudent(long id);
 }
