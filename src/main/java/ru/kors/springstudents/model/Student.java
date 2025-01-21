@@ -1,7 +1,7 @@
 package ru.kors.springstudents.model;
 
 import jakarta.persistence.*;
-import lombok.*;
+import lombok.Data;
 
 import java.time.LocalDate;
 import java.time.Period;
@@ -12,20 +12,19 @@ import java.time.Period;
 public class Student {
     @Id
     @GeneratedValue
-    @Column
-    private Optional<Long> id;
-
-    @Column
-    private Optional<String> firstName;
-
-    @Column
-    private Optional<String> lastName;
-
-    @Column
-    private Optional<LocalDate> dateOfBirth;
-
     @Column(unique = true)
-    private Optional<String> email;
+    private Long id;
+
+    @Column
+    private String firstName;
+
+    @Column
+    private String lastName;
+
+    @Column
+    private LocalDate dateOfBirth;
+
+    private String email;
 
     @Column
     private int age;
