@@ -7,8 +7,6 @@ import java.util.List;
 
 
 public interface StudentRepository extends JpaRepository<Student, Long> {
-    void deleteByEmail(long id);
-
     Student findStudentById(long id);
 
     Student save(Student student);
