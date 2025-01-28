@@ -24,6 +24,7 @@ public class Student {
     @Column
     private LocalDate dateOfBirth;
 
+    @Column(unique = true)
     private String email;
 
     @Column
